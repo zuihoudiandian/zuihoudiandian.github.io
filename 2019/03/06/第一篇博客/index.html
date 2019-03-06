@@ -8,17 +8,30 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>第一篇博客 | 英语四级</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo server -d打开后台管理工具  编写博客  hexo generate    更新 hexo deploy    部署上GitHub">
+  <meta name="description" content="GitHub+Hexo 搭建个人网站详细教程搭建步骤 安装git 安装node.js 安装 hexo GitHub创建个人仓库  安装git什么是Git ?简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到GitHub上。如果想要了解Git的细节，参看廖雪峰老师的Git教程：Git教程 从Git官网下载：Git - Downloading">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一篇博客">
 <meta property="og:url" content="http://yoursite.com/2019/03/06/第一篇博客/index.html">
 <meta property="og:site_name" content="英语四级">
-<meta property="og:description" content="hexo server -d打开后台管理工具  编写博客  hexo generate    更新 hexo deploy    部署上GitHub">
+<meta property="og:description" content="GitHub+Hexo 搭建个人网站详细教程搭建步骤 安装git 安装node.js 安装 hexo GitHub创建个人仓库  安装git什么是Git ?简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到GitHub上。如果想要了解Git的细节，参看廖雪峰老师的Git教程：Git教程 从Git官网下载：Git - Downloading">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-06T04:43:07.519Z">
+<meta property="og:image" content="http://yoursite.com/img/git9.png">
+<meta property="og:image" content="http://yoursite.com/img/node.png">
+<meta property="og:image" content="http://yoursite.com/img/初始页面.png">
+<meta property="og:image" content="http://yoursite.com/img/ssh.png">
+<meta property="og:image" content="http://yoursite.com/img/wodessh.png">
+<meta property="og:image" content="http://yoursite.com/img/GitHub1.png">
+<meta property="og:image" content="http://yoursite.com/img/GitHub2.png">
+<meta property="og:image" content="http://yoursite.com/img/GitHub3.png">
+<meta property="og:image" content="http://yoursite.com/img/GitHub4.png">
+<meta property="og:image" content="http://yoursite.com/img/推送1.png">
+<meta property="og:image" content="http://yoursite.com/img/推送2.png">
+<meta property="og:image" content="http://yoursite.com/img/推送3.png">
+<meta property="og:updated_time" content="2019-03-06T09:05:50.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一篇博客">
-<meta name="twitter:description" content="hexo server -d打开后台管理工具  编写博客  hexo generate    更新 hexo deploy    部署上GitHub">
+<meta name="twitter:description" content="GitHub+Hexo 搭建个人网站详细教程搭建步骤 安装git 安装node.js 安装 hexo GitHub创建个人仓库  安装git什么是Git ?简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到GitHub上。如果想要了解Git的细节，参看廖雪峰老师的Git教程：Git教程 从Git官网下载：Git - Downloading">
+<meta name="twitter:image" content="http://yoursite.com/img/git9.png">
   
     <link rel="alternative" href="/atom.xml" title="英语四级" type="application/atom+xml">
   
@@ -187,7 +200,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hexo server -d<br>打开后台管理工具  编写博客 </p>
+        <h2 id="GitHub-Hexo-搭建个人网站详细教程"><a href="#GitHub-Hexo-搭建个人网站详细教程" class="headerlink" title="GitHub+Hexo 搭建个人网站详细教程"></a>GitHub+Hexo 搭建个人网站详细教程</h2><h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><ol>
+<li>安装git</li>
+<li>安装node.js</li>
+<li>安装 hexo</li>
+<li>GitHub创建个人仓库</li>
+</ol>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>什么是Git ?简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到GitHub上。如果想要了解Git的细节，参看<a href="http://link.zhihu.com/?target=http%3A//weibo.com/liaoxuefeng" target="_blank" rel="noopener">廖雪峰</a>老师的Git教程：<a href="http://link.zhihu.com/?target=http%3A//www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git教程</a> 从Git官网下载：<a href="http://link.zhihu.com/?target=https%3A//git-scm.com/download/win" target="_blank" rel="noopener">Git - Downloading Package</a> 现在的机子基本都是64位的，选择64位的安装包，下载后安装，</p>
+<p><img src="\img\git9.png" alt="图片"></p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a><strong>安装Node.js</strong></h3><p>Hexo基于Node.js，Node.js下载地址：<a href="http://link.zhihu.com/?target=https%3A//nodejs.org/en/download/" target="_blank" rel="noopener">Download | Node.js</a> 下载安装包，注意安装Node.js会包含环境变量及npm的安装，安装后，检测Node.js是否安装成功，在命令行中输入 node -v :</p>
+<p><img src="\img\node.png" alt="图片"></p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a><strong>安装Hexo</strong></h3><p>Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog，Hexo框架与以后你自己发布的网页都在这个文件夹中。创建好后，进入文件夹中,选中文件夹右键git bash here 打开</p>
+<p>使用npm命令安装Hexo，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>这个安装时间较长耐心等待，安装完成后，初始化我们的博客，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p>注意，这里的命令都是作用在刚刚创建的Blog文件夹中。</p>
+<p>为了检测我们的网站雏形，分别按顺序输入以下三条命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new test_my_site</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>这些命令在后面作介绍，完成后，打开浏览器输入地址：</p>
+<p>localhost:4000</p>
+<p><img src="\img\初始页面.png" alt="图片"></p>
+<h3 id="git与github绑定"><a href="#git与github绑定" class="headerlink" title="git与github绑定"></a>git与github绑定</h3><p>，我们就一起完成 Git 和 GitHub 的绑定，体验通过 Git 向 GitHub 提交代码的能力。不过在这之前，我们需要先了解 SSh（安全外壳协议），因为在 GitHub 上，一般都是通过 SSH 来授权的，而且大多数 Git 服务器也会选择使用 SSH 公钥来进行授权，所以想要向 GitHub 提交代码，首先就得在 GitHub 上添加 SSH key配置。在这里，如果大家对 SSH 还不太了解，那么建议先阅读博主之前写的文章「详述 SSH 的原理及其应用 」，从而对 SSH 有一个大致的了解。</p>
+<p>第 1 步：生成 SSH key</p>
+<p>我们要想生成SSH key，首先就得先安装 SSH，对于 Linux 和 Mac 系统，其默认是安装 SSH 的，而对于 Windows 系统，其默认是不安装 SSH 的，不过由于我们安装了 Git Bash，其也应该自带了 SSH. 可以通过在 Git Bash 中输入ssh命令，查看本机是否安装 SSH：</p>
+<p><img src="\img\ssh.png" alt="图片"></p>
+<p>如上图所示，此结果表示我们已经安装 SSH 啦！接下来，输入ssh-keygen -t rsa命令，表示我们指定 RSA 算法生成密钥，然后敲三次回车键，期间不需要输入密码，之后就就会生成两个文件，分别为id_rsa和id_rsa.pub，即密钥id_rsa和公钥id_rsa.pub. 对于这两个文件，其都为隐藏文件，默认生成在以下目录：</p>
+<p>Linux 系统：~/.ssh<br>Mac 系统：~/.ssh<br>Windows 系统：C:\Documents and Settings\username\.ssh<br>Windows 10 ：C:\Users\think.ssh</p>
+<p>我的ssh位置</p>
+<p><img src="\img\wodessh.png" alt></p>
+<p>密钥和公钥生成之后，我们要做的事情就是把公钥id_rsa.pub的内容添加到 GitHub，这样我们本地的密钥id_rsa和 GitHub 上的公钥id_rsa.pub才可以进行匹配，授权成功后，就可以向 GitHub 提交代码啦！</p>
+<p>第 2 步：添加 SSH key</p>
+<p><img src="\img\GitHub1.png" alt="图片"></p>
+<p>如上图所示，进入我们的 GitHub 主页，先点击右上角所示的倒三角▽图标，然后再点击Settins，进行设置页面；点击我们的头像亦可直接进入设置页面：</p>
+<p><img src="\img\GitHub2.png" alt="图片"></p>
+<p>如上图所示，进入Settings页面后，再点击SSH and GPG Keys进入此子界面，然后点击New SSH key按钮：</p>
+<p><img src="\img\GitHub3.png" alt="图片"></p>
+<p>如上图所示，我们只需要将公钥id_rsa.pub的内容粘贴到Key处的位置（Titles的内容不填写也没事），然后点击Add SSH key 即可。</p>
+<p>第 3 步：验证绑定是否成功    </p>
+<p>在我们添加完SSH key之后，也没有明确的通知告诉我们绑定成功啊！不过我们可以通过在 Git Bash 中输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>进行测试：</p>
+<p><img src="\img\GitHub4.png" alt="图片"></p>
+<p>如图所示就是成功的</p>
+<h3 id="推送博客到GitHub仓库中"><a href="#推送博客到GitHub仓库中" class="headerlink" title="推送博客到GitHub仓库中"></a>推送博客到GitHub仓库中</h3><p><img src="\img\推送1.png" alt></p>
+<p><img src="\img\推送2.png" alt></p>
+<p><img src="\img\推送3.png" alt></p>
+<h3 id="zuihoudiandian-github-io"><a href="#zuihoudiandian-github-io" class="headerlink" title="zuihoudiandian.github.io"></a><strong>zuihoudiandian.github.io</strong></h3><p>你就会发现你的博客已经上线了，可以在网络上被访问了。</p>
+<p>hexo server -d<br>打开后台管理工具  编写博客 </p>
 <p>hexo generate    更新</p>
 <p>hexo deploy    部署上GitHub</p>
 
